@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/container.dart';
 
 class FMBaseWidgetVC extends StatefulWidget {
   final func;
@@ -67,6 +68,14 @@ class FMBaseWidgetState extends State<FMBaseWidgetVC>{
                     fontSize: 15.0,
                   ),
                 ),
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context){
+                      return FMContainerVC();
+                    }
+                  ));
+                },
               );
             }
           ),
