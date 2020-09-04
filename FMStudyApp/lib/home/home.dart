@@ -35,8 +35,6 @@ class FMHomeState extends State<FMHomeVC> {
     funcLists.add({"name": "滚动", "desc": "滚动一个拥有多个子组件的父组件。"});
     funcLists.add({"name": "辅助功能", "desc": "给你的App添加辅助功能(这是一个正在进行的工作)。"});
 
-    print(funcLists);
-
     setState(() {
 
     });
@@ -83,11 +81,11 @@ class FMHomeState extends State<FMHomeVC> {
                     context,
                     MaterialPageRoute(builder: (context) {
                       if (func["name"] == "基础组件") {
-                        return BaseWidgetVC(func: func,);
+                        return FMBaseWidgetVC(func: func,);
                       } else if (func["name"] == "Material Components") {
-                        return BaseWidgetVC();
+                        return FMMaterialComponentsVC(func: func,);
                       }
-                      return BaseWidgetVC(func: func,);
+                      return FMBaseWidgetVC(func: func,);
                     }),
                   );
                 },

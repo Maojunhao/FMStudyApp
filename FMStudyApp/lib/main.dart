@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/home': (BuildContext context) => FMHomeVC(),
-        '/home/basewidget': (BuildContext context) => BaseWidgetVC(),
+        '/home/basewidget': (BuildContext context) => FMBaseWidgetVC(),
       },
     );
   }
