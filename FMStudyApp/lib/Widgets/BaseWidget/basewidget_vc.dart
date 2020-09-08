@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/container.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/row.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/column.dart';
 
 class FMBaseWidgetVC extends StatefulWidget {
   final func;
@@ -72,6 +74,13 @@ class FMBaseWidgetState extends State<FMBaseWidgetVC>{
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context){
+                      if (func["name"] == "Container") {
+                        return FMContainerVC();
+                      } else if (func["name"] == "Row") {
+                        return FMRowVC();
+                      } else if (func["name"] == "Column") {
+                        return FMColumnVC();
+                      }
                       return FMContainerVC();
                     }
                   ));
