@@ -92,6 +92,8 @@ class FMBaseWidgetState extends State<FMBaseWidgetVC>{
                         return FMImageVC();
                       } else if (func["name"] == "Text") {
                         return FMTextVC();
+                      } else if (func["name"] == "Icon") {
+                        return FMIconVC();
                       }
 
 
