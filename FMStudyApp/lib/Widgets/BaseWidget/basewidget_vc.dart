@@ -90,6 +90,8 @@ class FMBaseWidgetState extends State<FMBaseWidgetVC>{
                         return FMColumnVC();
                       } else if (func["name"] == "Image") {
                         return FMImageVC();
+                      } else if (func["name"] == "Text") {
+                        return FMTextVC();
                       }
 
 
