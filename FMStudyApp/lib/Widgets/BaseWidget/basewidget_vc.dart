@@ -2,6 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/container.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/row.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/column.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/image.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/text.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/icon.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/raisedbutton.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/scaffold.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/appbar.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/flutterlogo.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/placeholder.dart';
 
 class FMBaseWidgetVC extends StatefulWidget {
   final func;
@@ -80,7 +88,11 @@ class FMBaseWidgetState extends State<FMBaseWidgetVC>{
                         return FMRowVC();
                       } else if (func["name"] == "Column") {
                         return FMColumnVC();
+                      } else if (func["name"] == "Image") {
+                        return FMImageVC();
                       }
+
+
                       return FMContainerVC();
                     }
                   ));

@@ -9,7 +9,7 @@ class FMHomeVC extends StatefulWidget {
   FMHomeState createState() => FMHomeState();
 }
 
-class FMHomeState extends State<FMHomeVC> {
+class FMHomeState extends State<FMHomeVC>{
   var funcLists = [];
 
   @override
