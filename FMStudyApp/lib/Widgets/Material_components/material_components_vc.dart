@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:FMStudyApp/Widgets/Material_components/scaffold.dart';
+import 'package:FMStudyApp/Widgets/Material_components/appbar.dart';
 
 class FMMaterialComponentsVC extends StatefulWidget {
   final func;
@@ -73,7 +74,7 @@ class  FMMaterialComponentsState extends State<FMMaterialComponentsVC>{
                         if (func["name"] == "Scaffold") {
                           return FMScaffoldVC();
                         } else if (func["name"] == "Appbar") {
-                          return FMScaffoldVC();
+                          return FMAppBarVC();
                         }
                         return FMScaffoldVC();
                       }),
