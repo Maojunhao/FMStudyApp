@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:FMStudyApp/Widgets/Material_components/scaffold.dart';
 
 class FMMaterialComponentsVC extends StatefulWidget {
   final func;
@@ -26,7 +27,7 @@ class  FMMaterialComponentsState extends State<FMMaterialComponentsVC>{
     funcLists.add({"name": "MaterialApp", "desc": "一个方便的widget，它封装了应用程序实现Material Design所需要的一些widget。"});
     funcLists.add({"name": "WidgetsApp", "desc": "一个方便的类，它封装了应用程序通常需要的一些widget。"});
     funcLists.add({"name": "Drawer", "desc": "从Scaffold边缘水平滑动以显示应用程序中导航链接的Material Design面板。"});
-    funcLists.add({"name": "Appbar", "desc": "一个Material Design应用程序栏，由工具栏和其他可能的widget（如TabBar和FlexibleSpaceBar）组成。"});
+    funcLists.add({"name": "FloatingActionButton", "desc": "一个圆形图标按钮，它悬停在内容之上，以展示应用程序中的主要动作。FloatingActionButton通常用于Scaffold.floatingActionButton字段。"});
 
     setState(() {
 
@@ -65,6 +66,19 @@ class  FMMaterialComponentsState extends State<FMMaterialComponentsVC>{
                       fontSize: 15.0,
                     ),
                   ),
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context){
+                        if (func["name"] == "Scaffold") {
+                          return FMScaffoldVC();
+                        } else if (func["name"] == "Appbar") {
+                          return FMScaffoldVC();
+                        }
+                        return FMScaffoldVC();
+                      }),
+                    );
+                  },
                 );
               }
           ),

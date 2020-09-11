@@ -6,7 +6,7 @@ import 'package:FMStudyApp/Widgets/BaseWidget/image.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/text.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/icon.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/raisedbutton.dart';
-import 'package:FMStudyApp/Widgets/BaseWidget/scaffold.dart';
+import 'package:FMStudyApp/Widgets/Material_components/scaffold.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/appbar.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/flutterlogo.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/placeholder.dart';
@@ -95,6 +95,8 @@ class FMBaseWidgetState extends State<FMBaseWidgetVC>{
                       } else if (func["name"] == "Icon") {
                         return FMIconVC();
                       } else if (func["name"] == "RaisedButton") {
+                        return FMRaisedButtonVC();
+                      } else if (func["name"] == "Scaffold") {
                         return FMRaisedButtonVC();
                       }
 
