@@ -100,6 +100,8 @@ class FMBaseWidgetState extends State<FMBaseWidgetVC>{
                         return FMScaffoldVC();
                       } else if (func["name"] == "Scaffold") {
                         return FMScaffoldVC();
+                      } else if (func["name"] == "Appbar") {
+                        return FMAppBarVC();
                       }
 
 
