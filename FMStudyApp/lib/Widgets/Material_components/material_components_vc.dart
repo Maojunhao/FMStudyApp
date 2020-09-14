@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:FMStudyApp/Widgets/Material_components/scaffold.dart';
 import 'package:FMStudyApp/Widgets/Material_components/appbar.dart';
+import 'package:FMStudyApp/Widgets/Material_components/bottomnavigationbar.dart';
+import 'package:FMStudyApp/Widgets/Material_components/drawer.dart';
+import 'package:FMStudyApp/Widgets/Material_components/materialapp.dart';
+import 'package:FMStudyApp/Widgets/Material_components/tabbar.dart';
+import 'package:FMStudyApp/Widgets/Material_components/tabbarview.dart';
+import 'package:FMStudyApp/Widgets/Material_components/widgetsapp.dart';
 
 class FMMaterialComponentsVC extends StatefulWidget {
   final func;
@@ -75,7 +81,20 @@ class  FMMaterialComponentsState extends State<FMMaterialComponentsVC>{
                           return FMScaffoldVC();
                         } else if (func["name"] == "Appbar") {
                           return FMAppBarVC();
+                        } else if (func["name"] == "BottomNavigationBar") {
+                          return FMBottomNavBarVC();
+                        } else if (func["name"] == "TabBar") {
+                          return FMTabBarVC();
+                        } else if (func["name"] == "TabBarView") {
+                          return FMTabbarViewVC();
+                        } else if (func["name"] == "MaterialApp") {
+                          return FMMaterialAppVC();
+                        } else if (func["name"] == "WidgetsApp") {
+                          return FMWidgetsAppVC();
+                        } else if (func["name"] == "Drawer") {
+                          return FMDrawerVC();
                         }
+
                         return FMScaffoldVC();
                       }),
                     );
