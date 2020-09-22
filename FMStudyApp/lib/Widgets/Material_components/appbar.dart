@@ -85,6 +85,4 @@ class FMAppBarVC extends StatelessWidget {
       opacity: 0.5,
     );
   }
-
-
 }

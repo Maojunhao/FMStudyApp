@@ -1,3 +1,4 @@
+import 'package:FMStudyApp/Widgets/Material_components/floatingActionButton.dart';
 import 'package:flutter/material.dart';
 import 'package:FMStudyApp/Widgets/Material_components/scaffold.dart';
 import 'package:FMStudyApp/Widgets/Material_components/appbar.dart';
@@ -93,6 +94,8 @@ class  FMMaterialComponentsState extends State<FMMaterialComponentsVC>{
                           return FMWidgetsAppVC();
                         } else if (func["name"] == "Drawer") {
                           return FMDrawerVC();
+                        } else if (func["name"] == "FloatingActionButton") {
+                          return FMFloatingActionButtonVC();
                         }
 
                         return FMScaffoldVC();

@@ -43,7 +43,6 @@ class FMHomeState extends State<FMHomeVC>{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-
     return Container(
       child: Scaffold(
         backgroundColor: Colors.white,
@@ -75,7 +74,7 @@ class FMHomeState extends State<FMHomeVC>{
                     color: Colors.grey,
                   ),
                 ),
-                onTap: (){
+                onTap: () {
                   // 点击事件，在这里处理不同 Item 跳转
                   Navigator.push(
                     context,
@@ -86,7 +85,8 @@ class FMHomeState extends State<FMHomeVC>{
                         return FMMaterialComponentsVC(func: func,);
                       }
                       return FMBaseWidgetVC(func: func,);
-                    }),
+                    },
+                    settings: RouteSettings(name: '/materia')),
                   );
                 },
               );
