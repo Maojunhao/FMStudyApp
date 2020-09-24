@@ -38,11 +38,11 @@ class  FMMaterialComponentsState extends State<FMMaterialComponentsVC>{
     funcLists.add({"name": "FloatingActionButton", "action": "/MaterialComponents/FloatingActionButton",  "desc": "一个圆形图标按钮，它悬停在内容之上，以展示应用程序中的主要动作。FloatingActionButton通常用于Scaffold.floatingActionButton字段。"});
 
     funcLists.add({"name": "FlatButton", "action": "/MaterialComponents/FlatButton",  "desc": "一个扁平的Material按钮。"});
-    funcLists.add({"name": "IconButton", "action": "",  "desc": "一个Material图标按钮，点击时会有水波动画。"});
-    funcLists.add({"name": "PopupMenuButton", "action": "",  "desc": "当菜单隐藏式，点击或调用onSelected时显示一个弹出式菜单列表。"});
-    funcLists.add({"name": "ButtonBar", "action": "",  "desc": "水平排列的按钮组。"});
+    funcLists.add({"name": "IconButton", "action": "/MaterialComponents/IconButton",  "desc": "一个Material图标按钮，点击时会有水波动画。"});
+    funcLists.add({"name": "PopupMenuButton", "action": "/MaterialComponents/PopupMenuButton",  "desc": "当菜单隐藏式，点击或调用onSelected时显示一个弹出式菜单列表。"});
+    funcLists.add({"name": "ButtonBar", "action": "/MaterialComponents/ButtonBar",  "desc": "水平排列的按钮组。"});
 
-    funcLists.add({"name": "TextField", "action": "",  "desc": "文本输入框。"});
+    funcLists.add({"name": "TextField", "action": "/MaterialComponents/TextField",  "desc": "文本输入框。"});
     funcLists.add({"name": "Checkbox", "action": "",  "desc": "复选框，允许用户从一组中选择多个选项。 "});
     funcLists.add({"name": "Radio", "action": "",  "desc": "单选框，允许用户从一组中选择一个选项。"});
     funcLists.add({"name": "Switch", "action": "",  "desc": "On/off 用于切换一个单一状态。"});
@@ -107,33 +107,6 @@ class  FMMaterialComponentsState extends State<FMMaterialComponentsVC>{
                   onTap: (){
                     print("${func}");
                     Navigator.pushNamed(context, "${func["action"]}");
-
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context){
-                    //     if (func["name"] == "Scaffold") {
-                    //       return FMScaffoldVC();
-                    //     } else if (func["name"] == "Appbar") {
-                    //       return FMAppBarVC();
-                    //     } else if (func["name"] == "BottomNavigationBar") {
-                    //       return FMBottomNavBarVC();
-                    //     } else if (func["name"] == "TabBar") {
-                    //       return FMTabBarVC();
-                    //     } else if (func["name"] == "TabBarView") {
-                    //       return FMTabbarViewVC();
-                    //     } else if (func["name"] == "MaterialApp") {
-                    //       return FMMaterialAppVC();
-                    //     } else if (func["name"] == "WidgetsApp") {
-                    //       return FMWidgetsAppVC();
-                    //     } else if (func["name"] == "Drawer") {
-                    //       return FMDrawerVC();
-                    //     } else if (func["name"] == "FloatingActionButton") {
-                    //       return FMFloatingActionButtonVC();
-                    //     }
-                    //
-                    //     return FMScaffoldVC();
-                    //   }),
-                    // );
                   },
                 );
               }

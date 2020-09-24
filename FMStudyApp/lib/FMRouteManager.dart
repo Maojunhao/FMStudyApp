@@ -1,12 +1,16 @@
+import 'package:FMStudyApp/Widgets/Material_components/buttonbar.dart';
 import 'package:FMStudyApp/Widgets/Material_components/flatButton.dart';
 import 'package:FMStudyApp/Widgets/Material_components/floatingActionButton.dart';
 import 'package:FMStudyApp/Widgets/Material_components/appbar.dart';
 import 'package:FMStudyApp/Widgets/Material_components/bottomnavigationbar.dart';
 import 'package:FMStudyApp/Widgets/Material_components/drawer.dart';
+import 'package:FMStudyApp/Widgets/Material_components/iconbutton.dart';
 import 'package:FMStudyApp/Widgets/Material_components/materialapp.dart';
+import 'package:FMStudyApp/Widgets/Material_components/popupmenubutton.dart';
 import 'package:FMStudyApp/Widgets/Material_components/scaffold.dart';
 import 'package:FMStudyApp/Widgets/Material_components/tabbar.dart';
 import 'package:FMStudyApp/Widgets/Material_components/tabbarview.dart';
+import 'package:FMStudyApp/Widgets/Material_components/textfield.dart';
 import 'package:FMStudyApp/Widgets/Material_components/widgetsapp.dart';
 
 import 'package:FMStudyApp/home/home.dart';
@@ -22,7 +26,6 @@ class FMRouteManager {
   FMRouteManager(){
     _routeMap.addAll(mapForHome());
     _routeMap.addAll(mapForMaterialComponents());
-    print(_routeMap);
   }
 
   // 自定义路由
@@ -83,10 +86,10 @@ class FMRouteManager {
       "/MaterialComponents/Drawer": (BuildContext context) => FMDrawerVC(),
       "/MaterialComponents/FloatingActionButton": (BuildContext context) => FMFloatingActionButtonVC(),
       "/MaterialComponents/FlatButton": (BuildContext context) => FMFlatButtonVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      "/MaterialComponents/IconButton": (BuildContext context) => FMIconButtonVC(),
+      "/MaterialComponents/PopupMenuButton": (BuildContext context) => FMPopupMenuButtonVC(),
+      "/MaterialComponents/ButtonBar": (BuildContext context) => FMButtonBarVC(),
+      "/MaterialComponents/TextField": (BuildContext context) => FMTextFieldVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
