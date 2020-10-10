@@ -43,6 +43,7 @@ class  FMMaterialComponentsState extends State<FMMaterialComponentsVC>{
     funcLists.add({"name": "ButtonBar", "action": "/MaterialComponents/ButtonBar",  "desc": "水平排列的按钮组。"});
 
     funcLists.add({"name": "TextField", "action": "/MaterialComponents/TextField",  "desc": "文本输入框。"});
+    funcLists.add({"name": "FocusNode", "action": "/MaterialComponents/FocusNode",  "desc": "文本输入框的焦点控制。"});
     funcLists.add({"name": "Checkbox", "action": "",  "desc": "复选框，允许用户从一组中选择多个选项。 "});
     funcLists.add({"name": "Radio", "action": "",  "desc": "单选框，允许用户从一组中选择一个选项。"});
     funcLists.add({"name": "Switch", "action": "",  "desc": "On/off 用于切换一个单一状态。"});

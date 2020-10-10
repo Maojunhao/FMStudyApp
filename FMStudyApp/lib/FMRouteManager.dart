@@ -4,6 +4,7 @@ import 'package:FMStudyApp/Widgets/Material_components/floatingActionButton.dart
 import 'package:FMStudyApp/Widgets/Material_components/appbar.dart';
 import 'package:FMStudyApp/Widgets/Material_components/bottomnavigationbar.dart';
 import 'package:FMStudyApp/Widgets/Material_components/drawer.dart';
+import 'package:FMStudyApp/Widgets/Material_components/focusnode.dart';
 import 'package:FMStudyApp/Widgets/Material_components/iconbutton.dart';
 import 'package:FMStudyApp/Widgets/Material_components/materialapp.dart';
 import 'package:FMStudyApp/Widgets/Material_components/popupmenubutton.dart';
@@ -90,7 +91,7 @@ class FMRouteManager {
       "/MaterialComponents/PopupMenuButton": (BuildContext context) => FMPopupMenuButtonVC(),
       "/MaterialComponents/ButtonBar": (BuildContext context) => FMButtonBarVC(),
       "/MaterialComponents/TextField": (BuildContext context) => FMTextFieldVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      "/MaterialComponents/FocusNode": (BuildContext context) => FMFocusNodeVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
