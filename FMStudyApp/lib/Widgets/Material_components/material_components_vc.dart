@@ -46,9 +46,9 @@ class  FMMaterialComponentsState extends State<FMMaterialComponentsVC>{
     funcLists.add({"name": "FocusNode", "action": "/MaterialComponents/FocusNode",  "desc": "文本输入框的焦点控制。"});
     funcLists.add({"name": "Checkbox", "action": "/MaterialComponents/CheckBox",  "desc": "复选框，允许用户从一组中选择多个选项。"});
     funcLists.add({"name": "Radio", "action": "/MaterialComponents/Radio",  "desc": "单选框，允许用户从一组中选择一个选项。"});
-    funcLists.add({"name": "Switch", "action": "",  "desc": "On/off 用于切换一个单一状态。"});
-    funcLists.add({"name": "Slider", "action": "",  "desc": "滑块，允许用户通过滑动滑块来从一系列值中选择。"});
-    funcLists.add({"name": "Date & Time Pickers", "action": "",  "desc": "日期&时间选择器。"});
+    funcLists.add({"name": "Switch", "action": "/MaterialComponents/Switch",  "desc": "On/off 用于切换一个单一状态。"});
+    funcLists.add({"name": "Slider", "action": "/MaterialComponents/Slider",  "desc": "滑块，允许用户通过滑动滑块来从一系列值中选择。"});
+    funcLists.add({"name": "Date & Time Pickers", "action": "/MaterialComponents/DatePicker",  "desc": "日期&时间选择器。"});
 
     funcLists.add({"name": "SimpleDialog", "action": "",  "desc": "简单对话框可以显示附加的提示或操作。"});
     funcLists.add({"name": "AlertDialog", "action": "",  "desc": "一个会中断用户操作的对话款，需要用户确认。"});

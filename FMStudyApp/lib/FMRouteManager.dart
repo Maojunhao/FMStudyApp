@@ -1,5 +1,6 @@
 import 'package:FMStudyApp/Widgets/Material_components/buttonbar.dart';
 import 'package:FMStudyApp/Widgets/Material_components/checkbox.dart';
+import 'package:FMStudyApp/Widgets/Material_components/datepicker.dart';
 import 'package:FMStudyApp/Widgets/Material_components/flatButton.dart';
 import 'package:FMStudyApp/Widgets/Material_components/floatingActionButton.dart';
 import 'package:FMStudyApp/Widgets/Material_components/appbar.dart';
@@ -11,6 +12,8 @@ import 'package:FMStudyApp/Widgets/Material_components/materialapp.dart';
 import 'package:FMStudyApp/Widgets/Material_components/popupmenubutton.dart';
 import 'package:FMStudyApp/Widgets/Material_components/radio.dart';
 import 'package:FMStudyApp/Widgets/Material_components/scaffold.dart';
+import 'package:FMStudyApp/Widgets/Material_components/slider.dart';
+import 'package:FMStudyApp/Widgets/Material_components/switch.dart';
 import 'package:FMStudyApp/Widgets/Material_components/tabbar.dart';
 import 'package:FMStudyApp/Widgets/Material_components/tabbarview.dart';
 import 'package:FMStudyApp/Widgets/Material_components/textfield.dart';
@@ -96,9 +99,9 @@ class FMRouteManager {
       "/MaterialComponents/FocusNode": (BuildContext context) => FMFocusNodeVC(),
       "/MaterialComponents/CheckBox": (BuildContext context) => FMCheckBoxVC(),
       "/MaterialComponents/Radio": (BuildContext context) => FMRadioVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      "/MaterialComponents/Switch": (BuildContext context) => FMSwitchVC(),
+      "/MaterialComponents/Slider": (BuildContext context) => FMSliderVC(),
+      "/MaterialComponents/DatePicker": (BuildContext context) => FMDatePickerVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
