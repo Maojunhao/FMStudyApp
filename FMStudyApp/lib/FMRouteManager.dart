@@ -1,3 +1,4 @@
+import 'package:FMStudyApp/Widgets/Material_components/Dialog.dart';
 import 'package:FMStudyApp/Widgets/Material_components/buttonbar.dart';
 import 'package:FMStudyApp/Widgets/Material_components/checkbox.dart';
 import 'package:FMStudyApp/Widgets/Material_components/datepicker.dart';
@@ -102,7 +103,7 @@ class FMRouteManager {
       "/MaterialComponents/Switch": (BuildContext context) => FMSwitchVC(),
       "/MaterialComponents/Slider": (BuildContext context) => FMSliderVC(),
       "/MaterialComponents/DatePicker": (BuildContext context) => FMDatePickerVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      "/MaterialComponents/Dialog": (BuildContext context) => FMDialogVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
       // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
