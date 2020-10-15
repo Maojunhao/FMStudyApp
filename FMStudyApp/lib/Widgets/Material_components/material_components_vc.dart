@@ -51,9 +51,9 @@ class  FMMaterialComponentsState extends State<FMMaterialComponentsVC>{
     funcLists.add({"name": "Date & Time Pickers", "action": "/MaterialComponents/DatePicker",  "desc": "日期&时间选择器。"});
 
     funcLists.add({"name": "SimpleDialog", "action": "/MaterialComponents/Dialog",  "desc": "简单对话框可以显示附加的提示或操作。"});
-    funcLists.add({"name": "AlertDialog", "action": "",  "desc": "一个会中断用户操作的对话款，需要用户确认。"});
-    funcLists.add({"name": "BottomSheet", "action": "",  "desc": "BottomSheet是一个从屏幕底部滑起的列表（以显示更多的内容）。你可以调用showBottomSheet()或showModalBottomSheet弹出。"});
-    funcLists.add({"name": "ExpansionPanel", "action": "",  "desc": "Expansion panels contain creation flows and allow lightweight editing of an element. The ExpansionPanel widget implements this component."});
+    funcLists.add({"name": "AlertDialog", "action": "/MaterialComponents/Dialog",  "desc": "一个会中断用户操作的对话款，需要用户确认。"});
+    funcLists.add({"name": "BottomSheet", "action": "/MaterialComponents/BottomSheet",  "desc": "BottomSheet是一个从屏幕底部滑起的列表（以显示更多的内容）。你可以调用showBottomSheet()或showModalBottomSheet弹出。"});
+    funcLists.add({"name": "ExpansionPanel", "action": "/MaterialComponents/ExpansionPanel",  "desc": "Expansion panels contain creation flows and allow lightweight editing of an element. The ExpansionPanel widget implements this component."});
     funcLists.add({"name": "SnackBar", "action": "",  "desc": "具有可选操作的轻量级消息提示，在屏幕的底部显示。"});
 
     funcLists.add({"name": "Image", "action": "",  "desc": "一个显示图片的widget。"});
