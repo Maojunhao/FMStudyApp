@@ -54,19 +54,19 @@ class  FMMaterialComponentsState extends State<FMMaterialComponentsVC>{
     funcLists.add({"name": "AlertDialog", "action": "/MaterialComponents/Dialog",  "desc": "一个会中断用户操作的对话款，需要用户确认。"});
     funcLists.add({"name": "BottomSheet", "action": "/MaterialComponents/BottomSheet",  "desc": "BottomSheet是一个从屏幕底部滑起的列表（以显示更多的内容）。你可以调用showBottomSheet()或showModalBottomSheet弹出。"});
     funcLists.add({"name": "ExpansionPanel", "action": "/MaterialComponents/ExpansionPanel",  "desc": "Expansion panels contain creation flows and allow lightweight editing of an element. The ExpansionPanel widget implements this component."});
-    funcLists.add({"name": "SnackBar", "action": "",  "desc": "具有可选操作的轻量级消息提示，在屏幕的底部显示。"});
+    funcLists.add({"name": "SnackBar", "action": "/MaterialComponents/SnackBar",  "desc": "具有可选操作的轻量级消息提示，在屏幕的底部显示。"});
 
-    funcLists.add({"name": "Image", "action": "",  "desc": "一个显示图片的widget。"});
-    funcLists.add({"name": "Icon", "action": "",  "desc": "A Material Design icon. "});
-    funcLists.add({"name": "Chip", "action": "",  "desc": "标签，一个Material widget。 它可以将一个复杂内容实体展现在一个小块中，如联系人。"});
-    funcLists.add({"name": "Tooltip", "action": "",  "desc": "一个文本提示工具，帮助解释一个按钮或其他用户界面，当widget长时间按下时（当用户采取其他适当操作时）显示一个提示标签。 "});
-    funcLists.add({"name": "DataTable", "action": "",  "desc": "数据表显示原始数据集。它们通常出现在桌面企业产品中。DataTable Widget实现这个组件 "});
-    funcLists.add({"name": "Card", "action": "",  "desc": "一个 Material Design 卡片。拥有一个圆角和阴影。"});
-    funcLists.add({"name": "LinearProgressIndicator", "action": "",  "desc": "一个线性进度条，另外还有一个圆形进度条CircularProgressIndicator。"});
+    funcLists.add({"name": "Image", "action": "/BaseWidgets/Image",  "desc": "一个显示图片的widget。"});
+    funcLists.add({"name": "Icon", "action": "/BaseWidgets/Icon",  "desc": "A Material Design icon. "});
+    funcLists.add({"name": "Chip", "action": "/MaterialComponents/Chip",  "desc": "标签，一个Material widget。 它可以将一个复杂内容实体展现在一个小块中，如联系人。"});
+    funcLists.add({"name": "Tooltip", "action": "/MaterialComponents/ToolTip",  "desc": "一个文本提示工具，帮助解释一个按钮或其他用户界面，当widget长时间按下时（当用户采取其他适当操作时）显示一个提示标签。 "});
+    funcLists.add({"name": "DataTable", "action": "/MaterialComponents/DataTable",  "desc": "数据表显示原始数据集。它们通常出现在桌面企业产品中。DataTable Widget实现这个组件 "});
+    funcLists.add({"name": "Card", "action": "/MaterialComponents/Card",  "desc": "一个 Material Design 卡片。拥有一个圆角和阴影。"});
+    funcLists.add({"name": "LinearProgressIndicator", "action": "/MaterialComponents/LinearProgressIndicator",  "desc": "一个线性进度条，另外还有一个圆形进度条CircularProgressIndicator。"});
 
-    funcLists.add({"name": "ListTile", "action": "",  "desc": " 一个固定高度的行，通常包含一些文本，以及一个行前或行尾图标。"});
-    funcLists.add({"name": "Stepper", "action": "",  "desc": "一个Material Design 步骤指示器，显示一系列步骤的过程。"});
-    funcLists.add({"name": "Divider", "action": "",  "desc": "一个逻辑1像素厚的水平分割线，两边都有填充。"});
+    funcLists.add({"name": "ListTile", "action": "/MaterialComponents/ListTile",  "desc": " 一个固定高度的行，通常包含一些文本，以及一个行前或行尾图标。"});
+    funcLists.add({"name": "Stepper", "action": "/MaterialComponents/Stepper",  "desc": "一个Material Design 步骤指示器，显示一系列步骤的过程。"});
+    funcLists.add({"name": "Divider", "action": "/MaterialComponents/Divider",  "desc": "一个逻辑1像素厚的水平分割线，两边都有填充。"});
 
     setState(() {
 

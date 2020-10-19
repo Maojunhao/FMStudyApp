@@ -1,8 +1,20 @@
+import 'package:FMStudyApp/Widgets/BaseWidget/column.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/container.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/icon.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/image.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/raisedbutton.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/row.dart';
+import 'package:FMStudyApp/Widgets/BaseWidget/text.dart';
+
 import 'package:FMStudyApp/Widgets/Material_components/Dialog.dart';
 import 'package:FMStudyApp/Widgets/Material_components/bottomsheet.dart';
 import 'package:FMStudyApp/Widgets/Material_components/buttonbar.dart';
+import 'package:FMStudyApp/Widgets/Material_components/card.dart';
 import 'package:FMStudyApp/Widgets/Material_components/checkbox.dart';
+import 'package:FMStudyApp/Widgets/Material_components/chip.dart';
+import 'package:FMStudyApp/Widgets/Material_components/datatable.dart';
 import 'package:FMStudyApp/Widgets/Material_components/datepicker.dart';
+import 'package:FMStudyApp/Widgets/Material_components/divider.dart';
 import 'package:FMStudyApp/Widgets/Material_components/expansionpanel.dart';
 import 'package:FMStudyApp/Widgets/Material_components/flatButton.dart';
 import 'package:FMStudyApp/Widgets/Material_components/floatingActionButton.dart';
@@ -11,15 +23,20 @@ import 'package:FMStudyApp/Widgets/Material_components/bottomnavigationbar.dart'
 import 'package:FMStudyApp/Widgets/Material_components/drawer.dart';
 import 'package:FMStudyApp/Widgets/Material_components/focusnode.dart';
 import 'package:FMStudyApp/Widgets/Material_components/iconbutton.dart';
+import 'package:FMStudyApp/Widgets/Material_components/linearprogressindicator.dart';
+import 'package:FMStudyApp/Widgets/Material_components/listtile.dart';
 import 'package:FMStudyApp/Widgets/Material_components/materialapp.dart';
 import 'package:FMStudyApp/Widgets/Material_components/popupmenubutton.dart';
 import 'package:FMStudyApp/Widgets/Material_components/radio.dart';
 import 'package:FMStudyApp/Widgets/Material_components/scaffold.dart';
 import 'package:FMStudyApp/Widgets/Material_components/slider.dart';
+import 'package:FMStudyApp/Widgets/Material_components/snackbar.dart';
+import 'package:FMStudyApp/Widgets/Material_components/stepper.dart';
 import 'package:FMStudyApp/Widgets/Material_components/switch.dart';
 import 'package:FMStudyApp/Widgets/Material_components/tabbar.dart';
 import 'package:FMStudyApp/Widgets/Material_components/tabbarview.dart';
 import 'package:FMStudyApp/Widgets/Material_components/textfield.dart';
+import 'package:FMStudyApp/Widgets/Material_components/tooltip.dart';
 import 'package:FMStudyApp/Widgets/Material_components/widgetsapp.dart';
 
 import 'package:FMStudyApp/home/home.dart';
@@ -34,6 +51,7 @@ class FMRouteManager {
 
   FMRouteManager(){
     _routeMap.addAll(mapForHome());
+    _routeMap.addAll(mapForBaseWidgets());
     _routeMap.addAll(mapForMaterialComponents());
   }
 
@@ -81,6 +99,24 @@ class FMRouteManager {
     };
   }
 
+  // BaseWidgets 表
+  Map <String, WidgetBuilder> mapForBaseWidgets(){
+    return {
+      "/BaseWidgets/Container": (BuildContext context) => FMContainerVC(),
+      "/BaseWidgets/Row": (BuildContext context) => FMRowVC(),
+      "/BaseWidgets/Column": (BuildContext context) => FMColumnVC(),
+      "/BaseWidgets/Image": (BuildContext context) => FMImageVC(),
+      "/BaseWidgets/Text": (BuildContext context) => FMTextVC(),
+      "/BaseWidgets/Icon": (BuildContext context) => FMIconVC(),
+      "/BaseWidgets/RaisedButton": (BuildContext context) => FMRaisedButtonVC(),
+      "/BaseWidgets/Scaffold": (BuildContext context) => FMScaffoldVC(),
+      "/BaseWidgets/Appbar": (BuildContext context) => FMAppBarVC(),
+      // "/BaseWidgets/FlutterLogo": (BuildContext context) => FMContainerVC(),
+      // "/BaseWidgets/Image": (BuildContext context) => FMImageVC(),
+      // "/BaseWidgets/Image": (BuildContext context) => FMImageVC(),
+    };
+  }
+
   // MaterialComponents 表
   Map <String, WidgetBuilder> mapForMaterialComponents(){
     return {
@@ -108,9 +144,15 @@ class FMRouteManager {
       "/MaterialComponents/Dialog": (BuildContext context) => FMDialogVC(),
       "/MaterialComponents/BottomSheet": (BuildContext context) => FMBottomSheetVC(),
       "/MaterialComponents/ExpansionPanel": (BuildContext context) => FMExpansionPanelVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      "/MaterialComponents/SnackBar": (BuildContext context) => FMSnackBarVC(),
+      "/MaterialComponents/Chip": (BuildContext context) => FMChipVC(),
+      "/MaterialComponents/ToolTip": (BuildContext context) => FMToolTipVC(),
+      "/MaterialComponents/DataTable": (BuildContext context) => FMDataTableVC(),
+      "/MaterialComponents/Card": (BuildContext context) => FMCardVC(),
+      "/MaterialComponents/LinearProgressIndicator": (BuildContext context) => FMLinearProgressIndicatorVC(),
+      "/MaterialComponents/ListTile": (BuildContext context) => FMListTileVC(),
+      "/MaterialComponents/Stepper": (BuildContext context) => FMStepperVC(),
+      "/MaterialComponents/Divider": (BuildContext context) => FMDividerVC(),
     };
   }
 }
