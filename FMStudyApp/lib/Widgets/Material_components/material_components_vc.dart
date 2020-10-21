@@ -1,13 +1,4 @@
-import 'package:FMStudyApp/Widgets/Material_components/floatingActionButton.dart';
 import 'package:flutter/material.dart';
-import 'package:FMStudyApp/Widgets/Material_components/scaffold.dart';
-import 'package:FMStudyApp/Widgets/Material_components/appbar.dart';
-import 'package:FMStudyApp/Widgets/Material_components/bottomnavigationbar.dart';
-import 'package:FMStudyApp/Widgets/Material_components/drawer.dart';
-import 'package:FMStudyApp/Widgets/Material_components/materialapp.dart';
-import 'package:FMStudyApp/Widgets/Material_components/tabbar.dart';
-import 'package:FMStudyApp/Widgets/Material_components/tabbarview.dart';
-import 'package:FMStudyApp/Widgets/Material_components/widgetsapp.dart';
 
 class FMMaterialComponentsVC extends StatefulWidget {
   final func;

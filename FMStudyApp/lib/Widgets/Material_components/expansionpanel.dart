@@ -135,7 +135,5 @@ class ExpansionPanelModel {
   String title;
   bool isExpanded;
 
-  ExpansionPanelModel(this.value, this.title, this.isExpanded){
-
-  }
+  ExpansionPanelModel(this.value, this.title, this.isExpanded);
 }

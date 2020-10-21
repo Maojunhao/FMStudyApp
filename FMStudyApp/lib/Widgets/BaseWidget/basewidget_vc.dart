@@ -1,15 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:FMStudyApp/Widgets/BaseWidget/container.dart';
-import 'package:FMStudyApp/Widgets/BaseWidget/row.dart';
-import 'package:FMStudyApp/Widgets/BaseWidget/column.dart';
-import 'package:FMStudyApp/Widgets/BaseWidget/image.dart';
-import 'package:FMStudyApp/Widgets/BaseWidget/text.dart';
-import 'package:FMStudyApp/Widgets/BaseWidget/icon.dart';
-import 'package:FMStudyApp/Widgets/BaseWidget/raisedbutton.dart';
-import 'package:FMStudyApp/Widgets/Material_components/scaffold.dart';
-import 'package:FMStudyApp/Widgets/Material_components/appbar.dart';
-import 'package:FMStudyApp/Widgets/BaseWidget/flutterlogo.dart';
-import 'package:FMStudyApp/Widgets/BaseWidget/placeholder.dart';
 
 class FMBaseWidgetVC extends StatefulWidget {
   final func;

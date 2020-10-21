@@ -137,7 +137,5 @@ class FMRadioModel extends Object {
   int index;
   String text;
 
-  FMRadioModel(this.index, this.text){
-
-  }
+  FMRadioModel(this.index, this.text);
 }

@@ -1,3 +1,7 @@
+/*
+* 基础组件
+*/
+
 import 'package:FMStudyApp/Widgets/BaseWidget/column.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/container.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/icon.dart';
@@ -6,6 +10,9 @@ import 'package:FMStudyApp/Widgets/BaseWidget/raisedbutton.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/row.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/text.dart';
 
+/*
+ * Material Components
+ */
 import 'package:FMStudyApp/Widgets/Material_components/Dialog.dart';
 import 'package:FMStudyApp/Widgets/Material_components/bottomsheet.dart';
 import 'package:FMStudyApp/Widgets/Material_components/buttonbar.dart';
@@ -39,6 +46,9 @@ import 'package:FMStudyApp/Widgets/Material_components/textfield.dart';
 import 'package:FMStudyApp/Widgets/Material_components/tooltip.dart';
 import 'package:FMStudyApp/Widgets/Material_components/widgetsapp.dart';
 
+/*
+* 根目录
+*/
 import 'package:FMStudyApp/home/home.dart';
 import 'package:flutter/material.dart';
 
@@ -53,6 +63,7 @@ class FMRouteManager {
     _routeMap.addAll(mapForHome());
     _routeMap.addAll(mapForBaseWidgets());
     _routeMap.addAll(mapForMaterialComponents());
+    _routeMap.addAll(mapForCupertino());
   }
 
   // 自定义路由
@@ -153,6 +164,37 @@ class FMRouteManager {
       "/MaterialComponents/ListTile": (BuildContext context) => FMListTileVC(),
       "/MaterialComponents/Stepper": (BuildContext context) => FMStepperVC(),
       "/MaterialComponents/Divider": (BuildContext context) => FMDividerVC(),
+    };
+  }
+
+  // Cupertino
+  Map <String, WidgetBuilder> mapForCupertino(){
+    return {
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
     };
   }
 }

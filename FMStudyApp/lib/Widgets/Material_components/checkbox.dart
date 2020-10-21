@@ -125,7 +125,5 @@ class FMCheckBoxModel extends Object {
   bool selected;
   String text;
 
-  FMCheckBoxModel(this.selected, this.text){
-
-  }
+  FMCheckBoxModel(this.selected, this.text);
 }
