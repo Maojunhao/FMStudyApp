@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       initialRoute: '/',
       onGenerateRoute: (setting){
-        print("test = $setting");
         return manager.routeWithSetting(setting);
       },
       onUnknownRoute: (setting){

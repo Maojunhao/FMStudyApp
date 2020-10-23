@@ -9,6 +9,20 @@ import 'package:FMStudyApp/Widgets/BaseWidget/image.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/raisedbutton.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/row.dart';
 import 'package:FMStudyApp/Widgets/BaseWidget/text.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoActivityIndicator.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoAlertDialog.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoButton.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoDialog.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoDialogAction.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoFullscreenDialogTransition.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoNavigationBar.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoPageScaffold.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoPageTransition.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoSlider.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoSwitch.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoTabBar.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoTabScaffold.dart';
+import 'package:FMStudyApp/Widgets/Cupertino/CupertinoTabView.dart';
 
 /*
  * Material Components
@@ -170,31 +184,20 @@ class FMRouteManager {
   // Cupertino
   Map <String, WidgetBuilder> mapForCupertino(){
     return {
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
-      // "/MaterialComponents/AppBar": (BuildContext context) => FMAppBarVC(),
+      "/Cupertino/CupertinoActivityIndicator": (BuildContext context) => FMCupertinoActivityIndicatorVC(),
+      "/Cupertino/CupertinoAlertDialog": (BuildContext context) => FMCupertinoAlertDialogVC(),
+      "/Cupertino/CupertinoButton": (BuildContext context) => FMCupertinoButtonVC(),
+      "/Cupertino/CupertinoDialog": (BuildContext context) => FMCupertinoDialogVC(),
+      "/Cupertino/CupertinoDialogAction": (BuildContext context) => FMCupertinoDialogActionVC(),
+      "/Cupertino/CupertinoSlider": (BuildContext context) => FMCupertinoSliderVC(),
+      "/Cupertino/CupertinoSwitch": (BuildContext context) => FMCupertinoSwitchVC(),
+      "/Cupertino/CupertinoPageTransition": (BuildContext context) => FMCupertinoPageTransitionVC(),
+      "/Cupertino/CupertinoFullscreenDialogTransition": (BuildContext context) => FMCupertinoFullscreenDialogTransitionVC(),
+      "/Cupertino/CupertinoNavigationBar": (BuildContext context) => FMCupertinoNavigationBarVC(),
+      "/Cupertino/CupertinoTabBar": (BuildContext context) => FMCupertinoTabBarVC(),
+      "/Cupertino/CupertinoPageScaffold": (BuildContext context) => FMCupertinoPageScaffoldVC(),
+      "/Cupertino/CupertinoTabScaffold": (BuildContext context) => FMCupertinoTabScaffoldVC(),
+      "/Cupertino/CupertinoTabView": (BuildContext context) => FMCupertinoTabViewVC(),
     };
   }
 }
