@@ -1,3 +1,7 @@
+
+
+
+
 /*
 * 基础组件
 */
@@ -23,6 +27,7 @@ import 'package:FMStudyApp/Widgets/Cupertino/CupertinoSwitch.dart';
 import 'package:FMStudyApp/Widgets/Cupertino/CupertinoTabBar.dart';
 import 'package:FMStudyApp/Widgets/Cupertino/CupertinoTabScaffold.dart';
 import 'package:FMStudyApp/Widgets/Cupertino/CupertinoTabView.dart';
+import 'package:FMStudyApp/Widgets/Layout/stack.dart';
 
 /*
  * Material Components
@@ -78,6 +83,7 @@ class FMRouteManager {
     _routeMap.addAll(mapForBaseWidgets());
     _routeMap.addAll(mapForMaterialComponents());
     _routeMap.addAll(mapForCupertino());
+    _routeMap.addAll(mapForLayout());
   }
 
   // 自定义路由
@@ -198,6 +204,13 @@ class FMRouteManager {
       "/Cupertino/CupertinoPageScaffold": (BuildContext context) => FMCupertinoPageScaffoldVC(),
       "/Cupertino/CupertinoTabScaffold": (BuildContext context) => FMCupertinoTabScaffoldVC(),
       "/Cupertino/CupertinoTabView": (BuildContext context) => FMCupertinoTabViewVC(),
+    };
+  }
+
+  // Widgets.Layout
+  Map <String, WidgetBuilder> mapForLayout(){
+    return {
+      "/Layout/Stack": (BuildContext context) => FMStackVC(),
     };
   }
 }

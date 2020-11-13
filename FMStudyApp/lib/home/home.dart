@@ -1,4 +1,5 @@
 import 'package:FMStudyApp/Widgets/Cupertino/cupertino_vc.dart';
+import 'package:FMStudyApp/Widgets/Layout/layout.dart';
 import 'package:flutter/material.dart';
 
 import 'package:FMStudyApp/Widgets/BaseWidget/basewidget_vc.dart';
@@ -85,7 +86,10 @@ class FMHomeState extends State<FMHomeVC>{
                         return FMMaterialComponentsVC(func: func,);
                       } else if (func["name"] == "Cupertino(iOS风格的widget)") {
                         return FMCupertinoVC(func: func);
+                      } else if (func["name"] == "Layout") {
+                        return FMLayoutVC(func: func);
                       }
+
                       return FMBaseWidgetVC(func: func,);
                     },
                     settings: RouteSettings(name: '/materia')),

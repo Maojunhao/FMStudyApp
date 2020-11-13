@@ -37,13 +37,13 @@ class FMBottomNavBarState extends State <FMBottomNavBarVC>{
       iconSize: 30,
       selectedFontSize: 16,
       unselectedFontSize: 11,
-      // selectedLabelStyle: TextStyle(
-      //   color: Colors.yellow,
-      //   fontSize: 12
-      // ),
-      // unselectedLabelStyle: TextStyle(
-      //   color: Colors.cyan,
-      // ),
+      selectedLabelStyle: TextStyle(
+        color: Colors.white,
+        fontSize: 20
+      ),
+      unselectedLabelStyle: TextStyle(
+        color: Colors.cyan,
+      ),
       // showSelectedLabels: false,
       // showUnselectedLabels: false,
       selectedIconTheme: IconThemeData(
@@ -54,7 +54,7 @@ class FMBottomNavBarState extends State <FMBottomNavBarVC>{
         color: Colors.black,
         size: 24,
       ),
-      backgroundColor: Colors.lightBlue,
+      // backgroundColor: Colors.lightBlue,
     );
   }
 
